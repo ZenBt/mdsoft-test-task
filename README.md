@@ -66,7 +66,7 @@ REST-api сервис по трекингу Магазинов.
 Создать секретный ключ \
 `export SECRET_KEY="VerySecretKeyDjango123123"` \
 Создать админа через \
-`python manage.py createsuperuser` \
+`python manage.py createsuperuser` 
 ## Запуска на локальной машине
 `python manage.py runserver`
 
