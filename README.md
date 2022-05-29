@@ -9,7 +9,7 @@ REST-api сервис по трекингу Магазинов.
 `POST /shop/`, content_type='application/json' \
 Формат запроса: 
 `{  
-    "name": "",  
+    "name": "Shop name",  
     "city": 1,  
     "street": 3,  
     "house_number": 45,  
@@ -54,4 +54,20 @@ REST-api сервис по трекингу Магазинов.
 Осуществляется администратором через `/admin/`  \
 
 ## Установка
-to be added soon
+`git clone https://github.com/ZenBt/mdsoft-test-task.git` \
+Создать виртуальное окружени (например через `python3 -m venv venv`
+Активировать venv `source venv/bin/activate` и установить необходимые пакеты `pip install -r mdsoft-test-task/requirements.txt`
+Для работы необходим установленный PostgreSQL
+Данные о созданном пользователе необходимо внести в переменные окружения
+`export PG_NAME="название бд"` \
+`export PG_USER="имя пользователя бд"` \
+`export PG_PASSWORD="пароль для бд"` \
+`export PG_HOST="localhost"` \
+Создать секретный ключ \
+`export SECRET_KEY="VerySecretKeyDjango123123"` \
+Создать админа через \
+`python manage.py createsuperuser` \
+## Запуска на локальной машине
+`python manage.py runserver`
+
+
